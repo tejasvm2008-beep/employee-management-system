@@ -1,0 +1,3 @@
+node_modules
+.venv
+service_account_key.json

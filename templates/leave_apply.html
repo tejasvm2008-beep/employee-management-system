@@ -1,0 +1,35 @@
+<!-- templates/leave_apply.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Apply Leave</h2>
+
+<form action="/leave/submit" method="POST">
+
+    <select name="leave_type"
+            class="form-control mb-3">
+
+        <option>CL</option>
+        <option>EL</option>
+        <option>OD</option>
+        <option>WFH</option>
+
+    </select>
+
+    <input type="date"
+           name="from_date"
+           class="form-control mb-3">
+
+    <input type="date"
+           name="to_date"
+           class="form-control mb-3">
+
+    <button class="btn btn-success">
+        Apply Leave
+    </button>
+
+</form>
+
+{% endblock %}
