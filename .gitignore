@@ -1,3 +1,7 @@
 node_modules
 .venv
 service_account_key.json
+serivce_account_key.json
+.env
+__pycache__/
+*.pyc
